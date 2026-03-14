@@ -997,3 +997,33 @@ color:#fff;
 body.modal-open{
   overflow: hidden;
 }
+/* ===== REGISTER PAGE MOBILE HEADER FIX ===== */
+
+@media (max-width: 860px){
+  .inner-header .brand{
+    align-items: center;
+    gap: 10px;
+    max-width: calc(100% - 64px);
+  }
+
+  .inner-header .brand-logo{
+    width: 88px;
+    height: 54px;
+    flex-shrink: 0;
+  }
+
+  .inner-header .brand-title{
+    font-size: 0.95rem;
+    line-height: 1.15;
+  }
+
+  .inner-header .brand-subtitle{
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    line-height: 1.15;
+  }
+
+  .inner-header .nav-wrap{
+    min-height: 82px;
+  }
+}
