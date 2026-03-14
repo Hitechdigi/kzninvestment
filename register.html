@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register — KwaZulu-Natal Investment Forum</title>
+  <meta name="description" content="Registration page for the KwaZulu-Natal Investment Forum." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<!-- Success Modal -->
+<div class="success-modal" id="successModal" aria-hidden="true">
+  <div class="success-modal-backdrop" id="successModalBackdrop"></div>
+
+  <div class="success-modal-card" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+    <button class="success-modal-close" type="button" id="successModalClose" aria-label="Close">×</button>
+
+    <div class="success-modal-icon-wrap">
+      <div class="success-modal-icon">✓</div>
+    </div>
+
+    <h3 id="successModalTitle">Registration Successful</h3>
+    <p>
+      Thank you for registering for the <strong>KwaZulu-Natal Investment Forum</strong>.
+      Your registration has been submitted successfully.
+    </p>
+
+    <div class="success-modal-actions">
+      <button type="button" class="btn btn-primary" id="successModalBtn">Done</button>
+    </div>
+  </div>
+</div>
+<body>
+  <header class="site-header inner-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="KwaZulu-Natal Investment Forum logo" class="brand-logo" />
+        <div>
+          <div class="brand-title">KwaZulu-Natal Investment Forum</div>
+          <div class="brand-subtitle">Registration Page</div>
+        </div>
+      </a>
+      <nav class="site-nav always-show">
+        <a href="index.html">Home</a>
+        <a href="index.html#speakers">Speakers</a>
+        <a href="index.html#stakeholders">Stakeholders</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="register-main">
+    <section class="register-hero">
+      <div class="container register-hero-grid">
+        <div>
+          <span class="section-tag">Registration</span>
+          <h1 class="section-title">Complete your forum registration</h1>
+          <p class="section-text">
+            Select your registration type and complete the form below.
+          </p>
+        </div>
+        <div class="register-info-card">
+          <strong>Event Details</strong>
+          <p>KwaZulu-Natal Investment Forum</p>
+          <p>30 July 2026</p>
+          <p>Radisson Hotel, Umhlanga</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="registration-form">
+          <div class="form-card full-span">
+            <h2>Registration Type</h2>
+            <p class="form-helper required">Confirm your registration type</p>
+            <div class="radio-list">
+              <label class="radio-option"><input type="radio" name="registration_type" value="Delegate" checked> <span>Delegate</span></label>
+              <label class="radio-option"><input type="radio" name="registration_type" value="Guest Speaker"> <span>Guest Speaker</span></label>
+              <label class="radio-option"><input type="radio" name="registration_type" value="Media"> <span>Media</span></label>
+              <label class="radio-option"><input type="radio" name="registration_type" value="Staff"> <span>Staff</span></label>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <label>First Name<input type="text" placeholder="Enter first name"></label>
+          </div>
+          <div class="form-card">
+            <label>Last Name<input type="text" placeholder="Enter last name"></label>
+          </div>
+          <div class="form-card">
+            <label>Email Address<input type="email" placeholder="Enter email address"></label>
+          </div>
+          <div class="form-card">
+            <label>Mobile Number<input type="tel" placeholder="Enter mobile number"></label>
+          </div>
+          <div class="form-card full-span">
+            <label>Company / Organisation<input type="text" placeholder="Enter organisation"></label>
+          </div>
+          <div class="form-card full-span">
+            <label>Message / Notes
+              <textarea rows="5" placeholder="Add any registration notes, dietary requirements or questions"></textarea>
+            </label>
+          </div>
+          <div class="form-card full-span form-submit-row">
+            <label class="checkbox-option"><input type="checkbox" checked> <span>I agree to be contacted regarding event registration and updates.</span></label>
+            <button type="submit" class="btn btn-primary large">Submit Registration</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js?v=3"></script>
+</body>
+</html>
